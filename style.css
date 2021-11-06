@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* perspective: 1000px; */
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.card{
+    /* transition:all 0.5s ease; */
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 25px;
+    perspective: 1000px;
+    background-color: #cccccc81;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0 , 0, 0, 0.2),0 0px 50px rgba(0 , 0, 0, 0.2);
+}
+.racket{
+   min-height: 35vh; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform-style: preserve-3d;
+  
+}
+.racket img{
+    width: 22rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    transform-style: preserve-3d;
+
+}
+.circle{
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    transition: all 0.75s ease-out;
+    border-radius: 50%;
+    background: linear-gradient(
+        to top,
+        rgb(238, 238, 6),
+        #761111
+    );
+    z-index: 1;
+}
+.info{
+    transform-style: preserve-3d;
+}
+.info h1{
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+.info h3{
+    font-size: 1.2rem;
+    padding: 2rem 0rem;
+    color: gray;
+    font-weight: 900;
+    transition: all 0.75s ease-out;
+}
+.info .sizes{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+
+}
+.sizes button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0 , 0, 0, 0.2);
+}
+.sizes .active{
+    background-color: rgb(165, 159, 159);
+}
+.purchase{
+    transition: all 0.75s ease-out;
+}
+.purchase button{
+    padding: 0.5rem 2rem;
+    width: 100%;
+    margin: 2rem 0rem;
+    background:   rgb(238, 238, 6);
+    border-right: 4px solid #761111;
+    border-bottom: 4px solid #761111;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 25px;transition: all 0.75s ease-out;
+    font-weight: bolder;
+    /* box-shadow: 0px 5px 10px rgba(0 , 0, 0, 0.2); */
+}
