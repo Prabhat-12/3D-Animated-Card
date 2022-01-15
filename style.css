@@ -97,10 +97,8 @@ body{
     width: 100%;
     margin: 2rem 0rem;
     background:   rgb(238, 238, 6);
-    border-right: 4px solid #761111;
-    border-bottom: 4px solid #761111;
-    border-top: none;
-    border-left: none;
+    box-shadow: -3px 3px 12px 0 #692b30;
+    border: none;
     cursor: pointer;
     border-radius: 25px;transition: all 0.75s ease-out;
     font-weight: bolder;
